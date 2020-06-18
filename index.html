@@ -1,5 +1,57 @@
 <html>
+
+<style>
+    body {
+        margin:0;
+    }
+
+    .michael-background {
+        position:fixed;
+        width:100%;
+        height:100%;
+        top:0;left:0;
+        background: url(michael.svg) no-repeat;
+        background-position: bottom left;
+        background-size:50%;
+    }
+
+    .logo {
+        position:fixed;
+        top:50px;
+        right:5%;
+        width:70%;
+    }
+
+    @media (min-width: 600px) {
+        .logo {
+            position:fixed;
+            right:15%;
+            width:40%;
+        }   
+    }
+
+    @media (min-width: 1150px) {
+        .logo {
+            position:fixed;
+            right:15%;
+            width:450px;
+        }   
+        .michael-background {
+            background-size: contain;
+        }
+    }
+
+    @media (min-width: 1900px) {
+       
+    }
+
+
+</style>
+
 <body>
-  <a href="articles/test.html">Test</a>
+    <div class="michael-background"></div>
+
+<img class="logo" src="nom.svg" />
+
 </body>
 </html>
