@@ -34,40 +34,25 @@ h1, h2, h3 {
     }
 
     .logo {
-        position:fixed;
-        top:50px;
-        right:5%;
-        width:70%;
+
+    
+        
     }
 
-    @media (min-width: 600px) {
-        .logo {
-            position:fixed;
-            right:15%;
-            width:40%;
-        }   
-    }
-
-    @media (min-width: 1150px) {
-        .logo {
-            position:fixed;
-            right:15%;
-            width:450px;
-        }   
-        .michael-background {
-            background-size: contain;
-        }
-    }
-
-    @media (min-width: 1900px) {
-       
-    }
 ul { list-style-type: none; padding:0; margin:0;}
 
 h1 {
-    margin:190px 20px auto 25%;
     font-size:16px;
     color:#808080;
+    position:fixed;
+    top:50px;
+    right:5%;
+    width:70%;
+}
+
+h1 span {
+    display:block;
+    margin-top: 10px;
 }
 
 a {
@@ -105,7 +90,9 @@ a {
 }
 
 .activity {
-    margin:20px 20px auto 10px;
+    position:absolute;
+    top:40%;
+    margin:0 20px auto 10px;
 }
 
 .activity img {
@@ -138,6 +125,37 @@ a {
     margin-top:10px;
 }
 
+@media (orientation: landscape) {
+        h1 {
+            right:25%;
+            top:8%;
+            width:40%;
+        } 
+
+        h1 img {
+            margin-right: 5%;
+        }
+
+    .michael-background {
+        height:85%;
+        top:15%;
+        background-size:contain;
+
+        }
+        .socialNetworks {
+            top:15%;
+            left:0;
+            right: unset;
+            bottom: unset;
+            width: 33%;
+        }
+
+        .activity {
+            left:30%;
+            top:60%;
+        }
+  }
+
 </style>
 
 <body>
@@ -164,8 +182,8 @@ a {
 
     <div class="michael-background"></div>
 
-<img class="logo" src="nom.svg" />
-<h1>Michael is funder of <a href="https://www.creo-ignem.fr">Creo Ignem</a> and Director &amp; Product Owner at <a href="https://www.altazion.com">Altazion</a>  </h1>
+
+<h1><img class="logo" src="nom.svg" /><span>Michael is funder of <a href="https://www.creo-ignem.fr">Creo Ignem</a> and Director &amp; Product Owner at <a href="https://www.altazion.com">Altazion</a>  </span></h1>
 
 <section class="activity">
 <main>
